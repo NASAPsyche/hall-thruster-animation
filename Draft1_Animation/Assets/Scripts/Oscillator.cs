@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//need to fix electrons movement
 public class Oscillator : MonoBehaviour
 {
     float timeCounter = 0;
