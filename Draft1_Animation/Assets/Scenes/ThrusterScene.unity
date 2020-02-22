@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1030,7 +1030,6 @@ MonoBehaviour:
   backgroundImage: {fileID: 2109888790}
   textField: {fileID: 1258856730}
   componentCanvas: {fileID: 1012572325}
-  electron1: {fileID: 0}
 --- !u!64 &406533149
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1694,7 +1693,6 @@ MonoBehaviour:
   backgroundImage: {fileID: 2109888790}
   textField: {fileID: 1679218694}
   componentCanvas: {fileID: 836937825}
-  electron1: {fileID: 0}
 --- !u!64 &688893297
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2378,7 +2376,6 @@ MonoBehaviour:
   backgroundImage: {fileID: 2109888790}
   textField: {fileID: 1679218694}
   componentCanvas: {fileID: 836937825}
-  electron1: {fileID: 0}
 --- !u!64 &863269605
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2647,7 +2644,6 @@ MonoBehaviour:
   backgroundImage: {fileID: 2109888790}
   textField: {fileID: 1679218694}
   componentCanvas: {fileID: 836937825}
-  electron1: {fileID: 0}
 --- !u!64 &906843518
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3923,7 +3919,6 @@ MonoBehaviour:
   backgroundImage: {fileID: 2109888790}
   textField: {fileID: 1679218694}
   componentCanvas: {fileID: 836937825}
-  electron1: {fileID: 0}
 --- !u!64 &1346859355
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3959,7 +3954,6 @@ MonoBehaviour:
   backgroundImage: {fileID: 2109888790}
   textField: {fileID: 1249267732}
   componentCanvas: {fileID: 1215263687}
-  electron1: {fileID: 0}
 --- !u!64 &1374112345
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4713,7 +4707,6 @@ MonoBehaviour:
   backgroundImage: {fileID: 2109888790}
   textField: {fileID: 837083387}
   componentCanvas: {fileID: 455816731}
-  electron1: {fileID: 0}
 --- !u!64 &1556307290
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4851,7 +4844,6 @@ MonoBehaviour:
   backgroundImage: {fileID: 2109888790}
   textField: {fileID: 1679218694}
   componentCanvas: {fileID: 836937825}
-  electron1: {fileID: 0}
 --- !u!64 &1650020433
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5321,7 +5313,6 @@ MonoBehaviour:
   backgroundImage: {fileID: 2109888790}
   textField: {fileID: 1679218694}
   componentCanvas: {fileID: 836937825}
-  electron1: {fileID: 0}
 --- !u!64 &1741073135
 MeshCollider:
   m_ObjectHideFlags: 0
