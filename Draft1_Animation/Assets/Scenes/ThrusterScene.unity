@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2063,6 +2063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tabGroup: {fileID: 1323672159}
+  toggleButton: {fileID: 1872634877}
 --- !u!1 &785613655
 GameObject:
   m_ObjectHideFlags: 0
@@ -3362,6 +3363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tabGroup: {fileID: 1323672159}
+  toggleButton: {fileID: 1872634877}
 --- !u!1 &1215263687
 GameObject:
   m_ObjectHideFlags: 0
@@ -3893,6 +3895,7 @@ MonoBehaviour:
   selectedTab: {fileID: 1597972249}
   tabSelected: {fileID: 21300004, guid: 7ae485e5860dc434b8c2a73a6bc46976, type: 3}
   tabNotSelected: {fileID: 21300002, guid: 7ae485e5860dc434b8c2a73a6bc46976, type: 3}
+  toggleButton: {fileID: 0}
   displayObjects:
   - {fileID: 1066377481}
   - {fileID: 1715517464}
@@ -4785,6 +4788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tabGroup: {fileID: 1323672159}
+  toggleButton: {fileID: 1872634877}
 --- !u!114 &1597972250
 MonoBehaviour:
   m_ObjectHideFlags: 0
