@@ -23,10 +23,10 @@ public class ToggleTechnical : MonoBehaviour
 
         if(buttonState == true){
             ToggleButton.GetComponent<Image>().sprite = toggleActive;
-            tabGrouper.OnTabSelected(destab);
+            tabGrouper.OnTabSelected(destab, ToggleButton);
         }else{
             ToggleButton.GetComponent<Image>().sprite = toggleInactive;
-            tabGrouper.OnTabSelected(destab);
+            tabGrouper.OnTabSelected(destab, ToggleButton);
         }        
         
     }

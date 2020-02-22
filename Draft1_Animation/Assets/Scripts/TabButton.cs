@@ -8,10 +8,11 @@ using UnityEngine.EventSystems;
 public class TabButton : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler, IPointerExitHandler
 {
     public TabGroup tabGroup;
+    public Toggle toggleButton;
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        tabGroup.OnTabSelected(this);
+        tabGroup.OnTabSelected(this, toggleButton);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
