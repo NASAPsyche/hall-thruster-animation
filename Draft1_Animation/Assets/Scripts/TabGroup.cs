@@ -9,7 +9,6 @@ public class TabGroup : MonoBehaviour
     public TabButton selectedTab;
     public Sprite tabSelected;
     public Sprite tabNotSelected;
-    public Toggle toggleButton;
 
     public List<GameObject> displayObjects;
 
@@ -53,44 +52,21 @@ public class TabGroup : MonoBehaviour
         //button.GetComponent<Image>().color = new Color32(3, 82, 235, 255);
     }
 
-    public void OnTabSelected(TabButton button, Toggle toggle)
+     public void OnTabSelected(TabButton button)
     {
-        Toggle ToggleButton = toggle.GetComponent<Toggle>();
-
-        bool buttonState = ToggleButton.isOn;
-
         selectedTab = button;        
         ResetTabs();
-        //button.GetComponent<Image>().sprite = tabSelected;
-        button.GetComponent<Image>().color = new Color32(255, 255, 255, 60);        
+        button.GetComponent<Image>().sprite = tabSelected;        
         int index = button.transform.GetSiblingIndex();
-
-        if(buttonState == false){
-            for(int i=0; i<displayObjects.Count; i++)
-            {
-                if(i == index)
-                {
-                    displayObjects[i].SetActive(true);
-                }else{
-                    displayObjects[i].SetActive(false);
-                }
-            }
-        }else if(buttonState == true)
+        for(int i=0; i<displayObjects.Count; i++)
         {
-            for(int i=0; i<displayObjects.Count; i++)
+            if(i == index)
             {
-                if(i == 3 && index == 0)
-                {
-                    displayObjects[i].SetActive(true);
-                }else if(i == index && index != 0)
-                {
-                    displayObjects[i].SetActive(true);
-                }else{
-                    displayObjects[i].SetActive(false);
-                }
+                displayObjects[i].SetActive(true);
+            }else{
+                displayObjects[i].SetActive(false);
             }
         }
-        
     }
 
     public void ResetTabs()
@@ -98,7 +74,7 @@ public class TabGroup : MonoBehaviour
         foreach(TabButton button in tabButtons)
         {
             if(selectedTab!= null && button == selectedTab) {continue; }
-            button.GetComponent<Image>().color = new Color32(255, 255, 255, 0);
+            button.GetComponent<Image>().sprite = tabNotSelected;
         }
     }
 }
