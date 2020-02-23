@@ -6,19 +6,13 @@ using UnityEngine.UI;
 //need to fix electrons movement
 public class Oscillator : MonoBehaviour
 {
-    float timeCounter = 0;
+    public float timeCounter = 0;
     bool beginAnimation = false;
     // Start is called before the first frame update
     public void Start()
     {
       timeCounter=transform.position.x*30f;
-      timeCounter=transform.position.z*20f;
-    }
-
-    public void callUpdate()
-    {
-      //if(Input.GetKeyDown(KeyCode.Space))
-      beginAnimation = true;
+      timeCounter+=transform.position.z*20f;
     }
 
     // Update is called once per frame
@@ -26,7 +20,9 @@ public class Oscillator : MonoBehaviour
     {
         //Debug.Log("Update" + beginAnimation);
         // Check for space input and set boolean to opposite
-
+      if(Input.GetKeyDown(KeyCode.Space)){
+        beginAnimation = true;
+      }
         //only change electrons when begin animation is true
 
     }
