@@ -9961,6 +9961,41 @@ PrefabInstance:
       propertyPath: ColorModule.gradient.maxGradient.key1.b
       value: 0.5566038
       objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: ColorModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.6745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.7294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.75686276
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2282939267939060686, guid: e4911a733bf384891a7fd9b1724cf886,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10031,7 +10066,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2282939267939060687, guid: e4911a733bf384891a7fd9b1724cf886, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e4911a733bf384891a7fd9b1724cf886, type: 3}
 --- !u!1 &124828620
 GameObject:
@@ -46046,6 +46082,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035010323}
   m_CullTransparentMesh: 0
+--- !u!1 &1043396004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2282939267939060683, guid: e4911a733bf384891a7fd9b1724cf886,
+    type: 3}
+  m_PrefabInstance: {fileID: 1816243988}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1043396005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043396004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0dd10a294b5b459ca71ade149fb48b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1066377481
 GameObject:
   m_ObjectHideFlags: 0
@@ -47382,6 +47436,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 7061899767535425809, guid: 8deb06e99f4204c3f967e9452eda7fe8, type: 3}
+--- !u!1 &1380845586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2282939267939060683, guid: e4911a733bf384891a7fd9b1724cf886,
+    type: 3}
+  m_PrefabInstance: {fileID: 100430431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1380845587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380845586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0dd10a294b5b459ca71ade149fb48b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1382785541
 GameObject:
   m_ObjectHideFlags: 0
@@ -47781,6 +47853,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443835586}
   m_CullTransparentMesh: 0
+--- !u!1 &1499796438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2282939267939060683, guid: e4911a733bf384891a7fd9b1724cf886,
+    type: 3}
+  m_PrefabInstance: {fileID: 1939078165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1499796439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499796438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0dd10a294b5b459ca71ade149fb48b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1514385185
 GameObject:
   m_ObjectHideFlags: 0
@@ -67099,6 +67189,24 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1665785702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2282939267939060683, guid: e4911a733bf384891a7fd9b1724cf886,
+    type: 3}
+  m_PrefabInstance: {fileID: 1754602058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1665785703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665785702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0dd10a294b5b459ca71ade149fb48b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1673172500
 GameObject:
   m_ObjectHideFlags: 0
@@ -77223,6 +77331,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: XenonParticle
       objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: ColorModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.6728373
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.7274238
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.85
+      objectReference: {fileID: 0}
     - target: {fileID: 2282939267939060686, guid: e4911a733bf384891a7fd9b1724cf886,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -77278,7 +77416,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2282939267939060687, guid: e4911a733bf384891a7fd9b1724cf886, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e4911a733bf384891a7fd9b1724cf886, type: 3}
 --- !u!1 &1776012169
 GameObject:
@@ -77468,6 +77607,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: XenonParticle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: ColorModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.6745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.7294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.75686276
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.85
+      objectReference: {fileID: 0}
     - target: {fileID: 2282939267939060686, guid: e4911a733bf384891a7fd9b1724cf886,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -77523,7 +77692,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2282939267939060687, guid: e4911a733bf384891a7fd9b1724cf886, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e4911a733bf384891a7fd9b1724cf886, type: 3}
 --- !u!1 &1822064604
 GameObject:
@@ -92396,6 +92566,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: XenonParticle (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: ColorModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.6745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.7294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.75686276
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282939267939060685, guid: e4911a733bf384891a7fd9b1724cf886,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.85
+      objectReference: {fileID: 0}
     - target: {fileID: 2282939267939060686, guid: e4911a733bf384891a7fd9b1724cf886,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -92451,7 +92651,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2282939267939060687, guid: e4911a733bf384891a7fd9b1724cf886, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e4911a733bf384891a7fd9b1724cf886, type: 3}
 --- !u!1 &1958795510
 GameObject:
