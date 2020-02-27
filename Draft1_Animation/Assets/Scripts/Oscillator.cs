@@ -20,7 +20,7 @@ public class Oscillator : MonoBehaviour
     {
         //Debug.Log("Update" + beginAnimation);
         // Check for space input and set boolean to opposite
-      if(Input.GetKeyDown(KeyCode.Space)){
+      if(Input.GetKeyDown(KeyCode.E)){
         beginAnimation = !beginAnimation;
       }
         //only change electrons when begin animation is true
