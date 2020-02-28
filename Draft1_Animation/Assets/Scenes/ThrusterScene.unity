@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeCounter: 0
+  beginAnimation: 0
 --- !u!4 &9851926
 Transform:
   m_ObjectHideFlags: 0
@@ -291,6 +292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeCounter: 0
+  beginAnimation: 0
 --- !u!4 &36230366
 Transform:
   m_ObjectHideFlags: 0
@@ -308,7 +310,7 @@ Transform:
   - {fileID: 47346937}
   - {fileID: 2139305210}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &40853306
 GameObject:
@@ -71244,6 +71246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeCounter: 0
+  beginAnimation: 0
 --- !u!4 &781706469
 Transform:
   m_ObjectHideFlags: 0
@@ -71261,7 +71264,7 @@ Transform:
   - {fileID: 1969996872}
   - {fileID: 1673172501}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &782597073
 GameObject:
@@ -71532,6 +71535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeCounter: 0
+  beginAnimation: 0
 --- !u!4 &801223693
 Transform:
   m_ObjectHideFlags: 0
@@ -71549,7 +71553,7 @@ Transform:
   - {fileID: 589083782}
   - {fileID: 1870983706}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &821610309
 GameObject:
@@ -92047,7 +92051,7 @@ Transform:
   - {fileID: 1554029382}
   - {fileID: 1592289091}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1081893549
 MonoBehaviour:
@@ -92063,6 +92067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeCounter: 0
+  beginAnimation: 0
 --- !u!1 &1094555980
 GameObject:
   m_ObjectHideFlags: 0
@@ -92285,6 +92290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeCounter: 0
+  beginAnimation: 0
 --- !u!4 &1132412617
 Transform:
   m_ObjectHideFlags: 0
@@ -92551,6 +92557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeCounter: 0
+  beginAnimation: 0
 --- !u!4 &1182996100
 Transform:
   m_ObjectHideFlags: 0
@@ -92568,7 +92575,7 @@ Transform:
   - {fileID: 540599130}
   - {fileID: 1933593094}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1189249067
 GameObject:
@@ -93383,6 +93390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeCounter: 0
+  beginAnimation: 0
 --- !u!4 &1309414003
 Transform:
   m_ObjectHideFlags: 0
@@ -98518,6 +98526,26 @@ MonoBehaviour:
   backgroundImage: {fileID: 2109888790}
   textField: {fileID: 1679218694}
   componentCanvas: {fileID: 836937825}
+--- !u!114 &1346859353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346859350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59551396e9370454c860298feffc779b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oscillator1: {fileID: 801223692}
+  oscillator2: {fileID: 781706468}
+  oscillator3: {fileID: 1182996099}
+  oscillator4: {fileID: 36230365}
+  oscillator5: {fileID: 1081893549}
+  oscillator6: {fileID: 1132412616}
+  oscillator7: {fileID: 1309414002}
+  oscillator8: {fileID: 9851925}
 --- !u!64 &1346859355
 MeshCollider:
   m_ObjectHideFlags: 0
