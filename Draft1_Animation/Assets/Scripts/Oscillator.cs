@@ -7,10 +7,11 @@ using UnityEngine.UI;
 public class Oscillator : MonoBehaviour
 {
     public float timeCounter = 0;
-    bool beginAnimation = false;
+    public bool beginAnimation = false;
     // Start is called before the first frame update
     public void Start()
     {
+      this.gameObject.SetActive(false);
       timeCounter=transform.position.x*30f;
       timeCounter+=transform.position.z*20f;
     }
@@ -20,11 +21,15 @@ public class Oscillator : MonoBehaviour
     {
         //Debug.Log("Update" + beginAnimation);
         // Check for space input and set boolean to opposite
-      if(Input.GetKeyDown(KeyCode.E)){
-        beginAnimation = !beginAnimation;
-      }
+      // if(Input.GetKeyDown(KeyCode.E)){
+      //   beginAnimation = !beginAnimation;
+      // }
         //only change electrons when begin animation is true
 
+    }
+
+    public void SetActiveTrue(){
+      this.gameObject.SetActive(true);
     }
 
     public void LateUpdate()
