@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -91981,9 +91981,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Non Technical Text
-
-'
+  m_Text: "What are the parts of the Thruster?\r\n\nIf you hover over the animation,
+    you will get to see the names of all different parts of the Thruster!\n"
 --- !u!222 &1066377483
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -93451,9 +93450,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Technical Text
-
-'
+  m_Text: "Current applications of Hall Thruster\r\n\nHall-Effect Thrusters are currently
+    in use for GPS, Satellite Radio Systems, Station-Keeping, Orbit-Raising[FJD(4]
+    , and Deep-Space Missions\n"
 --- !u!222 &1320285053
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -133806,7 +133805,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Here are the commands for the animation
+  m_Text: 'X - Xenon Release
+
+    M - magnetic Lines
+
+    E - Electron Movement'
 --- !u!222 &1715517466
 CanvasRenderer:
   m_ObjectHideFlags: 0
