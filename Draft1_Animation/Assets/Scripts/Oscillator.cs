@@ -8,6 +8,7 @@ public class Oscillator : MonoBehaviour
 {
     public float timeCounter = 0;
     public bool beginAnimation = false;
+    private Animation anim;
     // Start is called before the first frame update
     public void Start()
     {
@@ -25,11 +26,19 @@ public class Oscillator : MonoBehaviour
       //   beginAnimation = !beginAnimation;
       // }
         //only change electrons when begin animation is true
-
     }
 
     public void SetActiveTrue(){
       this.gameObject.SetActive(true);
+      anim = this.gameObject.GetComponent<Animation>();
+      anim.Play("e1cathode");
+      StartCoroutine("DisableScript");
+
+    }
+    private IEnumerator DisableScript()
+    {
+        yield return new WaitForSeconds(1f);
+        beginAnimation = true;
     }
 
     public void LateUpdate()
