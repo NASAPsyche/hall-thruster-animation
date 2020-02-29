@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9851926}
   - component: {fileID: 9851925}
+  - component: {fileID: 9851927}
   m_Layer: 0
   m_Name: GlowingElectron (8)
   m_TagString: Untagged
@@ -168,8 +169,24 @@ Transform:
   - {fileID: 1637832424}
   - {fileID: 702663900}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &9851927
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9851924}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: d81a18349eae64c00b3c27f26926113d, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: d81a18349eae64c00b3c27f26926113d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &21899594
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 36230366}
   - component: {fileID: 36230365}
+  - component: {fileID: 36230367}
   m_Layer: 0
   m_Name: GlowingElectron (4)
   m_TagString: Untagged
@@ -312,6 +330,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &36230367
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36230364}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 5d54d74ee4aad4b62b31da2cb7f433be, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 5d54d74ee4aad4b62b31da2cb7f433be, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &40853306
 GameObject:
   m_ObjectHideFlags: 0
@@ -71226,6 +71260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 781706469}
   - component: {fileID: 781706468}
+  - component: {fileID: 781706470}
   m_Layer: 0
   m_Name: GlowingElectron (2)
   m_TagString: Untagged
@@ -71266,6 +71301,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &781706470
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781706467}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 725cd4ffd912b4dcdbe46de931562bdb, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &782597073
 GameObject:
   m_ObjectHideFlags: 0
@@ -71566,7 +71617,8 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 4f2ceb2f8a3b9437ab127fa316978ddf, type: 2}
-  m_Animations: []
+  m_Animations:
+  - {fileID: 7400000, guid: 4f2ceb2f8a3b9437ab127fa316978ddf, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -77380,7 +77432,7 @@ Transform:
   - {fileID: 425192698}
   - {fileID: 1344213141}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &945598794
 GameObject:
@@ -91844,7 +91896,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 179.35, y: 0, z: -0.000015258789}
 --- !u!114 &1022768718
 MonoBehaviour:
@@ -92041,6 +92093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1081893548}
   - component: {fileID: 1081893549}
+  - component: {fileID: 1081893550}
   m_Layer: 0
   m_Name: GlowingElectron (5)
   m_TagString: Untagged
@@ -92083,6 +92136,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeCounter: 0
   beginAnimation: 0
+--- !u!111 &1081893550
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081893547}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7c8972ddfb2824de5b6b5a3b05224958, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7c8972ddfb2824de5b6b5a3b05224958, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1094555980
 GameObject:
   m_ObjectHideFlags: 0
@@ -92194,7 +92263,7 @@ Transform:
   - {fileID: 551990036}
   - {fileID: 72368414}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: -89.853004, z: 0}
 --- !u!1 &1111888762
 GameObject:
@@ -92285,6 +92354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1132412617}
   - component: {fileID: 1132412616}
+  - component: {fileID: 1132412618}
   m_Layer: 0
   m_Name: GlowingElectron (6)
   m_TagString: Untagged
@@ -92323,8 +92393,24 @@ Transform:
   - {fileID: 829873577}
   - {fileID: 988429158}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &1132412618
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132412615}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 708bfa6fc174b4b7280404d034fc61eb, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 708bfa6fc174b4b7280404d034fc61eb, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1149970771
 GameObject:
   m_ObjectHideFlags: 0
@@ -92552,6 +92638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1182996100}
   - component: {fileID: 1182996099}
+  - component: {fileID: 1182996101}
   m_Layer: 0
   m_Name: GlowingElectron (3)
   m_TagString: Untagged
@@ -92592,6 +92679,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &1182996101
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182996098}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 746d1837fe0b045939257989673cdc94, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1189249067
 GameObject:
   m_ObjectHideFlags: 0
@@ -92626,7 +92729,7 @@ Transform:
   - {fileID: 1335110862}
   - {fileID: 1843433711}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1192428801
 GameObject:
@@ -93385,6 +93488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1309414003}
   - component: {fileID: 1309414002}
+  - component: {fileID: 1309414004}
   m_Layer: 0
   m_Name: GlowingElectron (7)
   m_TagString: Untagged
@@ -93423,8 +93527,24 @@ Transform:
   - {fileID: 395271280}
   - {fileID: 122076592}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &1309414004
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309414001}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 2a580cf498b51465bb618cfa77f9fe39, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1320285051
 GameObject:
   m_ObjectHideFlags: 0
@@ -134664,7 +134784,7 @@ Transform:
   - {fileID: 1246257769}
   - {fileID: 900761883}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: -84.148, z: 0}
 --- !u!1001 &1816243988
 PrefabInstance:
@@ -170508,17 +170628,17 @@ PrefabInstance:
     - target: {fileID: 5393119450807417103, guid: 4824c42b3e8c54e779fd25ca5bdc70e7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.347
+      value: 0.5071761
       objectReference: {fileID: 0}
     - target: {fileID: 5393119450807417103, guid: 4824c42b3e8c54e779fd25ca5bdc70e7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.13310707
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5393119450807417103, guid: 4824c42b3e8c54e779fd25ca5bdc70e7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.355
+      value: -0.3174611
       objectReference: {fileID: 0}
     - target: {fileID: 5393119450807417103, guid: 4824c42b3e8c54e779fd25ca5bdc70e7,
         type: 3}
