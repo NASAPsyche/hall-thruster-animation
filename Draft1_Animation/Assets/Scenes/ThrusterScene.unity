@@ -71515,6 +71515,7 @@ GameObject:
   m_Component:
   - component: {fileID: 801223693}
   - component: {fileID: 801223692}
+  - component: {fileID: 801223694}
   m_Layer: 0
   m_Name: GlowingElectron (1)
   m_TagString: Untagged
@@ -71544,7 +71545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801223691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.403, y: 0.13310707, z: -0.241}
+  m_LocalPosition: {x: -0.403, y: 0.325, z: -0.805}
   m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
   m_Children:
   - {fileID: 73535911}
@@ -71555,6 +71556,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &801223694
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801223691}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 4f2ceb2f8a3b9437ab127fa316978ddf, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &821610309
 GameObject:
   m_ObjectHideFlags: 0
