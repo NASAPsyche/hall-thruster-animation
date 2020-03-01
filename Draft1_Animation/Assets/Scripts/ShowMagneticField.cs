@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShowMagneticField : MonoBehaviour
 {
-    bool isShown = false;
+    public bool isShown = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,9 +14,6 @@ public class ShowMagneticField : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.M)){
-            isShown = !isShown;
-            transform.gameObject.GetComponent<Renderer>().enabled = isShown;
-        }
+      transform.gameObject.GetComponent<Renderer>().enabled = isShown;
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ReleaseXenon : MonoBehaviour
 {
+    private bool releaseGas = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,15 +15,17 @@ public class ReleaseXenon : MonoBehaviour
     public void Update()
     {
         //Checks if xenon gas should be made visible (on X click)
-        if(Input.GetKeyDown(KeyCode.X)){
+        if(releaseGas){
             transform.gameObject.GetComponent<Renderer>().enabled=true;
 
         }
         if(transform.gameObject.GetComponent<Renderer>().enabled==true){
           //transform.position = riseXenon();
-          
+
         }
     }
+
+    
 
     // public Vector3 riseXenon()
     // {
