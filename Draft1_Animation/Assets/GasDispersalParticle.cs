@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GasDispersalParticle : MonoBehaviour
 {
+    private bool releaseGas = false;
     private ParticleSystem ps;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,8 @@ public class GasDispersalParticle : MonoBehaviour
     void Update()
     {
         //Checks if xenon gas should be made visible (on X click)
-        if(Input.GetKeyDown(KeyCode.X)){
+        if(releaseGas){
+          releaseGas = false;
             if(ps.isEmitting){
                 ps.Pause(true);
                 ps.Clear(true);
@@ -25,7 +27,11 @@ public class GasDispersalParticle : MonoBehaviour
             else{
                 ps.Play(true);
             }
-            
         }
+    }
+
+    public void release()
+    {
+      releaseGas = true;
     }
 }

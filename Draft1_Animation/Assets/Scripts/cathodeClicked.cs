@@ -13,7 +13,7 @@ public class cathodeClicked : MonoBehaviour
   public Oscillator oscillator7;
   public Oscillator oscillator8;
 
-  void OnMouseDown()
+  public void OnMouseDown()
   {
     oscillator1.SetActiveTrue();
     oscillator2.SetActiveTrue();
