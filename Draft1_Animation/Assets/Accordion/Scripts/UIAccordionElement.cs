@@ -8,8 +8,12 @@ namespace UnityEngine.UI
 {
 	[RequireComponent(typeof(RectTransform)), RequireComponent(typeof(LayoutElement))]
 	public class UIAccordionElement : Toggle {
+		
+		public GameObject potato;
 
 		[SerializeField] private float m_MinHeight = 18f;
+
+		private Sprite childsprite;
 		
 		private UIAccordion m_Accordion;
 		private RectTransform m_RectTransform;
@@ -67,7 +71,16 @@ namespace UnityEngine.UI
 		}
 		
 		public void OnValueChanged(bool state)
-		{
+		{			
+			string objName = this.gameObject.name;
+			Debug.Log(objName);
+			AnimationController cc = GameObject.FindObjectOfType(typeof(AnimationController)) as AnimationController;
+			cc.getScriptName(objName);
+
+			/*
+			AnimationController ac = GameObject.FindObjectOfType(typeof(AnimationController)) as AnimationController;
+			ac.getScriptName(objName);*/
+
 			if (this.m_LayoutElement == null)
 				return;
 			
