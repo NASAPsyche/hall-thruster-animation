@@ -8,6 +8,8 @@ public class ShowMagneticField : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+         MagneticButton mb = GameObject.FindObjectOfType(typeof(MagneticButton)) as MagneticButton;
+			   mb.resetAnim();
          transform.gameObject.GetComponent<Renderer>().enabled = isShown;
     }
 
