@@ -25,5 +25,16 @@ public class cathodeClicked : MonoBehaviour
     oscillator8.SetActiveTrue();
   }
 
+  public void resetAnim(){
+    oscillator1.resetAnim();
+    oscillator2.resetAnim();
+    oscillator3.resetAnim();
+    oscillator4.resetAnim();
+    oscillator5.resetAnim();
+    oscillator6.resetAnim();
+    oscillator7.resetAnim();
+    oscillator8.resetAnim();
+  }
+
 
 }

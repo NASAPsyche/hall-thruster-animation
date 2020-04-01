@@ -11,15 +11,35 @@ public class AnimationController : MonoBehaviour
 			cc.OnMouseDown();
         }
         if(name == "Item 1"){
-            MagneticButton cc = GameObject.FindObjectOfType(typeof(MagneticButton)) as MagneticButton;
-			cc.clicked();
+            MagneticButton mb = GameObject.FindObjectOfType(typeof(MagneticButton)) as MagneticButton;
+			mb.clicked();
         }
         if(name == "Item 2"){
             GasDispersalParticle[] gd = (GasDispersalParticle[]) GameObject.FindObjectsOfType (typeof(GasDispersalParticle));
 			foreach(GasDispersalParticle element in gd){
                 element.release();
-
             }
         }
+        if(name == "Item 3"){
+            ShowIonization si = GameObject.FindObjectOfType(typeof(ShowIonization)) as ShowIonization;
+			si.release();
+        }
+        if(name == "Item 4"){
+            ShowIonization si = GameObject.FindObjectOfType(typeof(ShowIonization)) as ShowIonization;
+			si.resetAnim();
+
+            GasDispersalParticle[] gd = (GasDispersalParticle[]) GameObject.FindObjectsOfType (typeof(GasDispersalParticle));
+			foreach(GasDispersalParticle element in gd){
+                element.resetAnim();
+            }
+
+            cathodeClicked cc = GameObject.FindObjectOfType(typeof(cathodeClicked)) as cathodeClicked;
+			cc.resetAnim();
+
+            MagneticButton mb = GameObject.FindObjectOfType(typeof(MagneticButton)) as MagneticButton;
+			mb.resetAnim();
+            
+        }
+
     }
 }

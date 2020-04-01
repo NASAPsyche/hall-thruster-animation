@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShowIonization : MonoBehaviour
 {
    private ParticleSystem ps;
+   private bool reset = false;
    private bool ionize = false;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,7 @@ public class ShowIonization : MonoBehaviour
         //Checks if xenon gas should be made visible (on X click)
         if(ionize){
           ionize = false;
-            if(ps.isEmitting){
+            if(reset==true){
                 ps.Pause(true);
                 ps.Clear(true);
             }
@@ -33,5 +34,11 @@ public class ShowIonization : MonoBehaviour
 
     public void release(){
       ionize = true;
+      reset = false;
+    }
+
+    public void resetAnim(){
+        ionize = true;
+        reset = true;
     }
 }

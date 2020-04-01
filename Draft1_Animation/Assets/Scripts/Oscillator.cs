@@ -42,6 +42,10 @@ public class Oscillator : MonoBehaviour
       StartCoroutine("DisableScript");
 
     }
+
+    public void resetAnim(){
+      this.gameObject.SetActive(false);
+    }
     private IEnumerator DisableScript()
     {
         yield return new WaitForSeconds(1f);

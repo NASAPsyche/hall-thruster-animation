@@ -11,7 +11,14 @@ public class MagneticButton : MonoBehaviour
       Debug.Log("click");
       foreach(ShowMagneticField magneticFieldScript in magneticFieldScripts)
       {
-        magneticFieldScript.isShown = !magneticFieldScript.isShown;
+        magneticFieldScript.isShown = true;
       }
+    }
+
+    public void resetAnim(){
+        foreach(ShowMagneticField magneticFieldScript in magneticFieldScripts)
+        {
+          magneticFieldScript.isShown = false;
+        }
     }
 }
