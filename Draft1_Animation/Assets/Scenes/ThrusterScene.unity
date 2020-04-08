@@ -307,7 +307,7 @@ RectTransform:
   m_GameObject: {fileID: 32912187}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 79324950}
   m_RootOrder: 0
@@ -21394,8 +21394,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -492.99994, y: -205.00003}
-  m_SizeDelta: {x: -1016.6, y: -406}
+  m_AnchoredPosition: {x: -492.99994, y: -179.50002}
+  m_SizeDelta: {x: -1016.6, y: -354.99997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &247822276
 MonoBehaviour:
@@ -36905,7 +36905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -492.99994, y: -205.00003}
+  m_AnchoredPosition: {x: -492.99994, y: -154}
   m_SizeDelta: {x: -1016.6, y: -406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &455816733
@@ -42788,7 +42788,7 @@ RectTransform:
   m_GameObject: {fileID: 560735287}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1482649138}
   m_RootOrder: 0
@@ -52480,7 +52480,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 261, y: -16}
+  m_AnchoredPosition: {x: 422, y: 100}
   m_SizeDelta: {x: 420, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &611601945
@@ -52515,7 +52515,7 @@ MonoBehaviour:
     m_Top: 2
     m_Bottom: 2
   m_ChildAlignment: 0
-  m_Spacing: 2
+  m_Spacing: 25
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
@@ -67481,12 +67481,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet
-    nisi vel eros laoreet imperdiet. Nunc non ullamcorper lacus, non semper dui. Sed
-    mattis eget augue id elementum. Phasellus quis nisl aliquam, tincidunt ex scelerisque,
-    commodo est. Sed nisl dolor, tempor id risus in, blandit commodo tellus. Nunc
-    felis libero, vestibulum vel volutpat id, mattis vel turpis. Sed porta, tortor
-    eget aliquet laoreet, nisl orci laoreet risus, mattis blandit arcu lectus at odio.
+  m_Text: "The Thruster generates a magnetic field which will enter the discharge
+    channel in order to reach the xenon! Magnets also use magnetic fields in order
+    to attract and repel!\nCurrent applications of Hall Thruster\n\u25CB\_\_Did you
+    know that Hall-Effect Thrusters are currently used in GPS, Satellite Radio and
+    Television?\n\u25CB\_\_Hall-Effect thrusters can also be used for deep-Space Missions!!
+    The kind of missions that will take us to Mars and beyond!"
 --- !u!222 &741427025
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -77953,8 +77953,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -493, y: -205}
-  m_SizeDelta: {x: -1016.6, y: -406}
+  m_AnchoredPosition: {x: -493, y: -179.5}
+  m_SizeDelta: {x: -1016.6, y: -355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &836937827
 MonoBehaviour:
@@ -78138,7 +78138,7 @@ RectTransform:
   m_GameObject: {fileID: 850025337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1772104850}
   m_RootOrder: 0
@@ -83670,7 +83670,7 @@ RectTransform:
   m_GameObject: {fileID: 978389235}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 345674399}
   m_RootOrder: 0
@@ -88704,8 +88704,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -492.99994, y: -205.00003}
-  m_SizeDelta: {x: -1016.6, y: -406}
+  m_AnchoredPosition: {x: -492.99994, y: -179.50002}
+  m_SizeDelta: {x: -1016.6, y: -354.99997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1012572327
 MonoBehaviour:
@@ -90102,8 +90102,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -492.99994, y: -205.00003}
-  m_SizeDelta: {x: -1016.6, y: -406}
+  m_AnchoredPosition: {x: -492.99994, y: -179.50002}
+  m_SizeDelta: {x: -1016.6, y: -354.99997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1215263689
 MonoBehaviour:
@@ -96490,7 +96490,7 @@ RectTransform:
   m_GameObject: {fileID: 1409775985}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 94391641}
   m_RootOrder: 0
@@ -153263,9 +153263,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Info about Cathode
-
-'
+  m_Text: The Cathodes are used to release negatively charged electrons towards the
+    positively charged anode
 --- !u!222 &2006818056
 CanvasRenderer:
   m_ObjectHideFlags: 0
