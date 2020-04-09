@@ -31539,7 +31539,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Info about Gas Dispersal
+  m_Text: 'The gas injector system is made up of the holes at the bottom of the channel
+    and is how the xenon gas particles will be released into the channel!
 
 '
 --- !u!222 &377617789
@@ -36928,8 +36929,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -492.99994, y: -154}
-  m_SizeDelta: {x: -1016.6, y: -406}
+  m_AnchoredPosition: {x: -492.99994, y: -179.50002}
+  m_SizeDelta: {x: -1016.6, y: -354.99997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &455816733
 MonoBehaviour:
@@ -37550,15 +37551,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet
-    nisi vel eros laoreet imperdiet. Nunc non ullamcorper lacus, non semper dui. Sed
-    mattis eget augue id elementum. Phasellus quis nisl aliquam, tincidunt ex scelerisque,
-    commodo est. Sed nisl dolor, tempor id risus in, blandit commodo tellus. Nunc
-    felis libero, vestibulum vel volutpat id, mattis vel turpis. Sed porta, tortor
-    eget aliquet laoreet, nisl orci laoreet risus, mattis blandit arcu lectus at odio.
-    Nunc cursus condimentum nulla quis gravida. Nulla et dolor at dui scelerisque
-    molestie. Pellentesque non velit elit. Suspendisse vel magna vel urna tempus pretium
-    at vitae ligula.
+  m_Text: When the xenon enters the channel, it collides with the electrons and forms
+    a positively charged ion! This ion is pushed out of the electric field and this
+    propels the thruster and space-craft forward!
 --- !u!222 &521361157
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -88677,12 +88672,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet
-    nisi vel eros laoreet imperdiet. Nunc non ullamcorper lacus, non semper dui. Sed
-    mattis eget augue id elementum. Phasellus quis nisl aliquam, tincidunt ex scelerisque,
-    commodo est. Sed nisl dolor, tempor id risus in, blandit commodo tellus. Nunc
-    felis libero, vestibulum vel volutpat id, mattis vel turpis. Sed porta, tortor
-    eget aliquet laoreet, nisl orci laoreet risus, mattis blandit arcu lectus at odio.
+  m_Text: "The electrons are being released from the cathode and the electric field
+    generated between the cathode and anode will cause the electrons to travel towards
+    the anode. The electrons enter the channel where the magnetic field was created
+    by the magnetic circuit. The electric and magnetic fields combine to trap the
+    electrons within a drift around the channel. This is referred to as a \u201CHall
+    Current\u201D"
 --- !u!222 &993139743
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -90522,15 +90517,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet
-    nisi vel eros laoreet imperdiet. Nunc non ullamcorper lacus, non semper dui. Sed
-    mattis eget augue id elementum. Phasellus quis nisl aliquam, tincidunt ex scelerisque,
-    commodo est. Sed nisl dolor, tempor id risus in, blandit commodo tellus. Nunc
-    felis libero, vestibulum vel volutpat id, mattis vel turpis. Sed porta, tortor
-    eget aliquet laoreet, nisl orci laoreet risus, mattis blandit arcu lectus at odio.
-    Nunc cursus condimentum nulla quis gravida. Nulla et dolor at dui scelerisque
-    molestie. Pellentesque non velit elit. Suspendisse vel magna vel urna tempus pretium
-    at vitae ligula.
+  m_Text: "The Xenon gas is released into the channel! It will ultimately collide
+    with the electrons that are already moving around the channel.\n\u25CB  \tDid
+    you know: Xenon gas is released and when ionized, it glows blue and is what causes
+    the cool blue glow as the space-craft moves through space!\n"
 --- !u!222 &1290803042
 CanvasRenderer:
   m_ObjectHideFlags: 0
