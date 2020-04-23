@@ -8,7 +8,6 @@ public class MagneticButton : MonoBehaviour
 
     public void clicked()
     {
-      Debug.Log("click");
       foreach(ShowMagneticField magneticFieldScript in magneticFieldScripts)
       {
         magneticFieldScript.isShown = true;
