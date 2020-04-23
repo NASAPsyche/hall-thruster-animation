@@ -73,7 +73,6 @@ namespace UnityEngine.UI
 		public void OnValueChanged(bool state)
 		{
 			string objName = this.gameObject.name;
-			Debug.Log(objName);
 			AnimationController cc = GameObject.FindObjectOfType(typeof(AnimationController)) as AnimationController;
 			cc.getScriptName(objName);
 

@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class Animation_Pointer_Magnetic : MonoBehaviour
 {
-    public bool clicked = false;
+    private bool clicked = false;
     private bool blink = false;
     void Start()
     {
       InvokeRepeating("Blink", 1.0f, 0.4f);
+    }
+
+    public void setClicked(bool clicked)
+    {
+      this.clicked = clicked;
     }
 
     void Blink()

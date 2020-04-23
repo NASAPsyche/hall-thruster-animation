@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +8,7 @@ using UnityEngine.UI;
 public class Oscillator : MonoBehaviour
 {
     public float timeCounter = 0;
-    public bool beginAnimation = false;
+    private bool beginAnimation = false;
     private Animation anim;
 
     // Start is called before the first frame update
@@ -16,14 +17,6 @@ public class Oscillator : MonoBehaviour
       this.gameObject.SetActive(false);
       timeCounter=transform.position.x*30f;
       timeCounter+=transform.position.z*20f;
-    }
-
-    // Update is called once per frame
-    public void Update()
-    {
-      // if(Input.GetKeyDown(KeyCode.E)){
-      //   beginAnimation = !beginAnimation;
-      // }
     }
 
     public void SetActiveTrue(){
@@ -41,11 +34,13 @@ public class Oscillator : MonoBehaviour
       anim.Play("e" + electronNumAnimation + "cathode");
       StartCoroutine("DisableScript");
 
+
     }
 
     public void resetAnim(){
       this.gameObject.SetActive(false);
     }
+
     private IEnumerator DisableScript()
     {
         yield return new WaitForSeconds(1f);
@@ -57,10 +52,6 @@ public class Oscillator : MonoBehaviour
       if(beginAnimation)
       {
          transform.position = MoveElectron();
-         // Debug.Log(transform.position.x);
-         // Debug.Log(transform.position.y);
-         // Debug.Log(transform.position.z);
-         // beginAnimation = false;
       }
     }
 
