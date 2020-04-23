@@ -31291,10 +31291,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Current applications of Hall Thruster\n\u25CB      Hall-Effect Thrusters
     are current in use for GPS, Satellite Radio Systems, Station-Keeping, Orbit-Raising,
-    and Deep-Space Missions\n\nParts of the Thruster\n\u25CB      The Thruster is
-    composed of a Cathode, Inner Chamber, Gas Dispersal System, and an anode\n\nThe
-    Thruster generates a radial magnetic field using the inner anode located inside
-    the inner chamber and the outer cathode\n"
+    and Deep-Space Missions\n\nThe Thruster generates a radial magnetic field using
+    the inner anode located inside the inner chamber and the outer cathode\n"
 --- !u!222 &337261021
 CanvasRenderer:
   m_ObjectHideFlags: 0
