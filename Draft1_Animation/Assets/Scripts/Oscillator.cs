@@ -32,7 +32,7 @@ public class Oscillator : MonoBehaviour
         }
       }
       anim.Play("e" + electronNumAnimation + "cathode");
-      StartCoroutine("DisableScript");
+      StartCoroutine(DisableScript());
 
 
     }

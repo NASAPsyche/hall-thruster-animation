@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class AccInfoToggle : MonoBehaviour
 {
-     public Toggle ToggleButton;
+    public Toggle ToggleButton;
     public Sprite toggleActive;
     public Sprite toggleInactive;
 
@@ -37,18 +37,7 @@ public class AccInfoToggle : MonoBehaviour
             foreach(GameObject info in NonTechInfo){
                 info.SetActive(true);
             }
-        }        
-        
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
+        }
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
