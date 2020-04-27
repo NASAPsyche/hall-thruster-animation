@@ -21,6 +21,9 @@ public class AccInfoToggle : MonoBehaviour
 
         buttonState = ToggleButton.isOn;
 
+        UIAccordionElement uie = GameObject.Find("Item 0").GetComponent<UIAccordionElement>();
+        uie.Updateheight();
+
         if(buttonState == true){
             ToggleButton.GetComponent<Image>().sprite = toggleActive;
             foreach(GameObject info in TechInfo){
