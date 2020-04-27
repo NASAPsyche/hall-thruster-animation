@@ -16080,6 +16080,7 @@ RectTransform:
   - {fileID: 1215263688}
   - {fileID: 455816732}
   - {fileID: 247822275}
+  - {fileID: 1063422088}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -89549,6 +89550,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0dd10a294b5b459ca71ade149fb48b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1063422087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1063422088}
+  - component: {fileID: 1063422090}
+  - component: {fileID: 1063422089}
+  m_Layer: 5
+  m_Name: Disclaimer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1063422088
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063422087}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 173061470}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1, y: -303}
+  m_SizeDelta: {x: 350, y: 65}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1063422089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063422087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 39ba734b41aa54f19ad237a6f602a0d5, type: 3}
+    m_FontSize: 8
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 8
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "This work was created in partial fulfillment of Penn State Behind Capstone
+    Course SWENG 481. The work is a result of the Psyche Student Collaborations component
+    of NASA\u2019s Psyche Mission (https://psyche.asu.edu). \u201CPsyche: A Journey
+    to a Metal World\u201D [Contract number NNM16AA09C] is part of the NASA Discovery
+    Program mission to solar system targets. Trade names and trademarks of ASU and
+    NASA are used in this work for identification only. Their usage does not constitute
+    an official endorsement, either expressed or implied, by Arizona State University
+    or National Aeronautics and Space Administration. The content is solely the responsibility
+    of the authors and does not necessarily represent the official views of ASU or
+    NASA."
+--- !u!222 &1063422090
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063422087}
+  m_CullTransparentMesh: 0
 --- !u!1 &1066377481
 GameObject:
   m_ObjectHideFlags: 0
