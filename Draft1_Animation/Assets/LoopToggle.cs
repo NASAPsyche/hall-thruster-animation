@@ -27,7 +27,10 @@ public class LoopToggle : MonoBehaviour
       buttonState = ToggleButton.isOn;
       AccordionObjects[4].GetComponent<UIAccordionElement>().OnValueChanged(true);
 
-
+      foreach(GameObject acc in AccordionObjects)
+      {
+          acc.GetComponent<UIAccordionElement>().OnValueChanged(false);
+      }
 
       if(buttonState)
       {
@@ -36,10 +39,6 @@ public class LoopToggle : MonoBehaviour
       }
       else
       {
-          foreach(GameObject acc in AccordionObjects)
-          {
-              acc.GetComponent<UIAccordionElement>().OnValueChanged(false);
-          }
           ToggleButton.GetComponent<Image>().sprite = toggleInactive;
       }
   }
