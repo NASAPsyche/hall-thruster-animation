@@ -21,10 +21,13 @@ public class AccInfoToggle : MonoBehaviour
 
         buttonState = ToggleButton.isOn;
 
+        
+
         if(buttonState == true){
             ToggleButton.GetComponent<Image>().sprite = toggleActive;
             foreach(GameObject info in TechInfo){
                 info.SetActive(true);
+                UIAccordionElement uie = GameObject.Find("Item 2").GetComponent<UIAccordionElement>();
             }
             foreach(GameObject info in NonTechInfo){
                 info.SetActive(false);
@@ -36,6 +39,7 @@ public class AccInfoToggle : MonoBehaviour
             }
             foreach(GameObject info in NonTechInfo){
                 info.SetActive(true);
+                UIAccordionElement uie = GameObject.Find("Item 2").GetComponent<UIAccordionElement>();
             }
         }
 

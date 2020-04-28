@@ -22,6 +22,15 @@ namespace UnityEngine.UI
 		[NonSerialized]
 		private readonly TweenRunner<FloatTween> m_FloatTweenRunner;
 
+		public void Updateheight(){
+			/*
+			float textheight = GetExpandedHeight();
+
+			SetHeight(textheight);*/
+
+			OnValueChanged(true);
+		}
+
 		protected UIAccordionElement()
 		{
 			if (this.m_FloatTweenRunner == null)
