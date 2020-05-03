@@ -25,12 +25,13 @@ public class LoopToggle : MonoBehaviour
       ToggleButton = GetComponent<Toggle>();
 
       buttonState = ToggleButton.isOn;
-      AccordionObjects[4].GetComponent<UIAccordionElement>().OnValueChanged(true);
+
 
       foreach(GameObject acc in AccordionObjects)
       {
           acc.GetComponent<UIAccordionElement>().OnValueChanged(false);
       }
+      // AccordionObjects[4].GetComponent<UIAccordionElement>().OnValueChanged(true);
 
       if(buttonState)
       {
