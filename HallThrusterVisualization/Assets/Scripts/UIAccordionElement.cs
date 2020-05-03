@@ -80,8 +80,11 @@ namespace UnityEngine.UI
 		public void OnValueChanged(bool state)
 		{
 			string objName = this.gameObject.name;
-			AnimationController cc = GameObject.FindObjectOfType(typeof(AnimationController)) as AnimationController;
-			cc.getScriptName(objName);
+			if(state)
+			{
+				AnimationController cc = GameObject.FindObjectOfType(typeof(AnimationController)) as AnimationController;
+				cc.getScriptName(objName);
+			}
 
 			/*
 			AnimationController ac = GameObject.FindObjectOfType(typeof(AnimationController)) as AnimationController;
