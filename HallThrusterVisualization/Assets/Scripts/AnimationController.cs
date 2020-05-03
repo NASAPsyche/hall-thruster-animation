@@ -45,8 +45,14 @@ public class AnimationController : MonoBehaviour
         if(name == "Item 4"){
             ShowIonization si = GameObject.FindObjectOfType(typeof(ShowIonization)) as ShowIonization;
             Animation_Pointer_Magnetic apm = GameObject.FindObjectOfType(typeof(Animation_Pointer_Magnetic)) as Animation_Pointer_Magnetic;
+            Animation_Pointer_Electron ape = GameObject.FindObjectOfType(typeof(Animation_Pointer_Electron)) as Animation_Pointer_Electron;
+            Animation_Pointer_Gas apg = GameObject.FindObjectOfType(typeof(Animation_Pointer_Gas)) as Animation_Pointer_Gas;
+            Animation_Pointer_Ionization api = GameObject.FindObjectOfType(typeof(Animation_Pointer_Ionization)) as Animation_Pointer_Ionization;
             apm.setClicked(false);
-			si.resetAnim();
+            ape.setClicked(true);
+            apg.setClicked(true);
+            api.setClicked(true);
+			      si.resetAnim();
 
             GasDispersalParticle[] gd = (GasDispersalParticle[]) GameObject.FindObjectsOfType (typeof(GasDispersalParticle));
 			foreach(GasDispersalParticle element in gd){
