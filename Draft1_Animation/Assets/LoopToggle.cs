@@ -16,6 +16,9 @@ public class LoopToggle : MonoBehaviour
   public GameObject BlinkingArrowXenon;
   public GameObject BlinkingArrowIonization;
 
+  Coroutine waitAnim;
+  GameObject currentAcc;
+
   bool buttonState;
   Sprite currentImage;
 
@@ -25,20 +28,23 @@ public class LoopToggle : MonoBehaviour
       ToggleButton = GetComponent<Toggle>();
 
       buttonState = ToggleButton.isOn;
+      Debug.Log("toggle" + buttonState);
       AccordionObjects[4].GetComponent<UIAccordionElement>().OnValueChanged(true);
 
       foreach(GameObject acc in AccordionObjects)
       {
-          acc.GetComponent<UIAccordionElement>().OnValueChanged(false);
+          //acc.GetComponent<UIAccordionElement>().OnValueChanged(false);
       }
 
       if(buttonState)
       {
           ToggleButton.GetComponent<Image>().sprite = toggleActive;
-          StartCoroutine(WaitNextAnimation());
+          waitAnim = StartCoroutine(WaitNextAnimation());
       }
       else
       {
+          StopCoroutine(waitAnim);
+          currentAcc.GetComponent<UIAccordionElement>().OnValueChanged(false);
           ToggleButton.GetComponent<Image>().sprite = toggleInactive;
       }
   }
@@ -50,6 +56,8 @@ public class LoopToggle : MonoBehaviour
       int i = 0;
       foreach(GameObject acc in AccordionObjects)
       {
+        currentAcc = acc;
+        Debug.Log("coroute" + buttonState);
         if(!buttonState)
         {
           break;
