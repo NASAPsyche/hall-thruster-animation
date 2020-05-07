@@ -11,6 +11,7 @@ before_install:
     -in Unity_v2019.x.ulf.enc -out ./Unity_v2019.x.ulf -d
     - export UNITY_LICENSE_CONTENT=`cat Unity_v2019.x.ulf`
     - rm Unity_v2019.x.ulf
+    
 jobs:
   include:
   - stage: build
