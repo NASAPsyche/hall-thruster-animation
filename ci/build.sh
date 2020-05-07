@@ -4,7 +4,7 @@ set -e
 set -x
 
 echo "Building for $BUILD_TARGET"
-
+echo $(pwd)
 export BUILD_PATH=./Builds/$BUILD_TARGET/
 mkdir -p $BUILD_PATH
 
