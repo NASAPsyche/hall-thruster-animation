@@ -11,13 +11,13 @@ before_install:
     $encrypted_66087b1c9a02_iv -in Unity_v2019.x.ulf.enc -out ./Unity_v2019.x.ulf -d
   - export UNITY_LICENSE_CONTENT=`cat Unity_v2019.x.ulf`
   - rm Unity_v2019.x.ulf
-  
+  - docker pull $IMAGE_NAME
 jobs:
   include:
   - stage: build
     env: BUILD_TARGET=StandaloneOSX
     script:
-      - "chmod +x ./ci/* && ./ci/docker_build.sh"
+      - "chmod +x ./ci/*"
       - "sudo chmod -R 777 ./Builds/"
       - "cd ./Builds/"
       - "zip -r StandaloneOSX.zip ./StandaloneOSX"
@@ -25,6 +25,48 @@ jobs:
       provider: releases
       api_key: $GITHUB_API_KEY
       file: StandaloneOSX.zip
+      skip_cleanup: true
+      on:
+        tags: true
+  - stage: build
+    env: BUILD_TARGET=StandaloneLinux64
+    script:
+      - "chmod +x ./ci/* && ./ci/docker_build.sh"
+      - "sudo chmod -R 777 ./Builds/"
+      - "cd ./Builds/"
+      - "zip -r StandaloneLinux64.zip ./StandaloneLinux64"
+    deploy:
+      provider: releases
+      api_key: $GITHUB_API_KEY
+      file: StandaloneLinux64.zip
+      skip_cleanup: true
+      on:
+        tags: true
+  - stage: build
+    env: BUILD_TARGET=StandaloneWindows64
+    script:
+      - "chmod +x ./ci/* && ./ci/docker_build.sh"
+      - "sudo chmod -R 777 ./Builds/"
+      - "cd ./Builds/"
+      - "zip -r StandaloneWindows64.zip ./StandaloneWindows64"
+    deploy:
+      provider: releases
+      api_key: $GITHUB_API_KEY
+      file: StandaloneWindows64.zip
+      skip_cleanup: true
+      on:
+        tags: true
+  - stage: build
+    env: BUILD_TARGET=WebGL
+    script:
+      - "chmod +x ./ci/* && ./ci/docker_build.sh"
+      - "sudo chmod -R 777 ./Builds/"
+      - "cd ./Builds/"
+      - "zip -r WebGL.zip ./WebGL"
+    deploy:
+      provider: releases
+      api_key: $GITHUB_API_KEY
+      file: WebGL.zip
       skip_cleanup: true
       on:
         tags: true
