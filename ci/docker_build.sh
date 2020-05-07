@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 set -e
-
+echo hello
+pwd
 docker run \
   -e BUILD_NAME \
   -e UNITY_LICENSE_CONTENT \
@@ -11,4 +12,4 @@ docker run \
   -w /project/ \
   -v $(pwd):/project/ \
   $IMAGE_NAME \
-  /bin/bash -c "./ci/before_script.sh && ./ci/build.sh"
+  /bin/bash -c "/project/ci/before_script.sh && /project/ci/build.sh"
