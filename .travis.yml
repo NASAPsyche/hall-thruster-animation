@@ -17,7 +17,7 @@ jobs:
   - stage: build
     env: BUILD_TARGET=StandaloneLinux64 IMAGE_NAME=gableroux/unity3d:2019.2.19f1
     script:
-      - "chmod +x ./ci/* && ./ci/docker_build.sh"
+      - "chmod +x ci/* && ci/docker_build.sh"
       - "sudo chmod -R 777 ./Builds/"
       - "cd ./Builds/"
       - "zip -r StandaloneLinux64.zip ./StandaloneLinux64"
@@ -31,7 +31,7 @@ jobs:
   - stage: build
     env: BUILD_TARGET=StandaloneOSX IMAGE_NAME=gableroux/unity3d:2019.2.19f1-mac
     script:
-      - "chmod +x ./ci/* && ./ci/docker_build.sh"
+      - "chmod +x ci/* && ci/docker_build.sh"
       - "sudo chmod -R 777 ./Builds/"
       - "cd ./Builds/"
       - "zip -r StandaloneOSX.zip ./StandaloneOSX"
@@ -45,7 +45,7 @@ jobs:
   - stage: build
     env: BUILD_TARGET=StandaloneWindows64 IMAGE_NAME=gableroux/unity3d:2019.2.19f1-windows
     script:
-      - "chmod +x ./ci/* && ./ci/docker_build.sh"
+      - "chmod +x ci/* && ci/docker_build.sh"
       - "sudo chmod -R 777 ./Builds/"
       - "cd ./Builds/"
       - "zip -r StandaloneWindows64.zip ./StandaloneWindows64"
@@ -59,7 +59,7 @@ jobs:
   - stage: build
     env: BUILD_TARGET=WebGL IMAGE_NAME=gableroux/unity3d:2019.2.19f1-webgl
     script:
-      - "chmod +x ./ci/* && ./ci/docker_build.sh"
+      - "chmod +x ci/* && ci/docker_build.sh"
       - "sudo chmod -R 777 ./Builds/"
       - "cd ./Builds/"
       - "zip -r WebGL.zip ./WebGL"
