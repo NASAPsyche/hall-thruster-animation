@@ -2,7 +2,7 @@ sudo: required
 language: bash
 env:
   global:
-  - IMAGE_NAME=gableroux/unity3d:2019.3.7f1
+  - IMAGE_NAME=gableroux/unity3d:latest
   - BUILD_NAME=HallThrusterVisualization
 services:
   - docker
