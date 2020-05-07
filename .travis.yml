@@ -1,0 +1,72 @@
+sudo: required
+language: bash
+env:
+  global:
+  - IMAGE_NAME=gableroux/unity3d:latest
+  - BUILD_NAME=HallThrusterVisualization
+services:
+- docker
+before_install:
+- openssl aes-256-cbc -K $encrypted_66087b1c9a02_key -iv $encrypted_66087b1c9a02_iv
+  -in ./unity3d.alf -out ./Unity_v2019.x.ulf -d
+- export UNITY_LICENSE_CONTENT=`cat Unity_v2019.x.ulf`
+- rm Unity_v2019.x.ulf
+- docker pull $IMAGE_NAME
+jobs:
+  include:
+  - stage: build
+    env: BUILD_TARGET=StandaloneLinux64 IMAGE_NAME=gableroux/unity3d:2019.2.19f1
+    script:
+      - "chmod +x ./ci/* && ./ci/docker_build.sh"
+      - "sudo chmod -R 777 ./Builds/"
+      - "cd ./Builds/"
+      - "zip -r StandaloneLinux64.zip ./StandaloneLinux64"
+    deploy:
+      provider: releases
+      api_key: $GITHUB_API_KEY
+      file: StandaloneLinux64
+      skip_cleanup: true
+      on:
+        tags: true
+  - stage: build
+    env: BUILD_TARGET=StandaloneOSX IMAGE_NAME=gableroux/unity3d:2019.2.19f1-mac
+    script:
+      - "chmod +x ./ci/* && ./ci/docker_build.sh"
+      - "sudo chmod -R 777 ./Builds/"
+      - "cd ./Builds/"
+      - "zip -r StandaloneOSX.zip ./StandaloneOSX"
+    deploy:
+      provider: releases
+      api_key: $GITHUB_API_KEY
+      file: StandaloneOSX
+      skip_cleanup: true
+      on:
+        tags: true
+  - stage: build
+    env: BUILD_TARGET=StandaloneWindows64 IMAGE_NAME=gableroux/unity3d:2019.2.19f1-windows
+    script:
+      - "chmod +x ./ci/* && ./ci/docker_build.sh"
+      - "sudo chmod -R 777 ./Builds/"
+      - "cd ./Builds/"
+      - "zip -r StandaloneWindows64.zip ./StandaloneWindows64"
+    deploy:
+      provider: releases
+      api_key: $GITHUB_API_KEY
+      file: StandaloneWindows64
+      skip_cleanup: true
+      on:
+        tags: true
+  - stage: build
+    env: BUILD_TARGET=WebGL IMAGE_NAME=gableroux/unity3d:2019.2.19f1-webgl
+    script:
+      - "chmod +x ./ci/* && ./ci/docker_build.sh"
+      - "sudo chmod -R 777 ./Builds/"
+      - "cd ./Builds/"
+      - "zip -r WebGL.zip ./WebGL"
+    deploy:
+      provider: releases
+      api_key: $GITHUB_API_KEY
+      file: WebGL
+      skip_cleanup: true
+      on:
+        tags: true
