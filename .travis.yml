@@ -18,6 +18,7 @@ jobs:
     env: BUILD_TARGET=StandaloneOSX
     script:
       - "chmod +x ./ci/*"
+      - "./ci/docker_build.sh"
       - "sudo chmod -R 777 ./Builds/"
       - "cd ./Builds/"
       - "zip -r StandaloneOSX.zip ./StandaloneOSX"
