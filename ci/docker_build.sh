@@ -8,6 +8,7 @@ docker run \
   -e BUILD_TARGET \
   -e UNITY_USERNAME \
   -e UNITY_PASSWORD \
-  -w /hall-thruster-animation/ \
+  -w /project/ \
+  -v $(pwd):/project/ \
   $IMAGE_NAME \
-  /bin/bash -c "/ci/before_script.sh && /ci/build.sh"
+  /bin/bash -c "/project/ci/before_script.sh && /project/ci/build.sh"
