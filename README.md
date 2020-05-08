@@ -5,3 +5,6 @@ Developed alongside the NASA Psyche Capstone team by Shrey Arora, Morgan Atterho
 
 # Info
 Uses Unity's WebGL modules to export animation to web version for use on sites to demonstrate the benefits and uses of hall-effects thrusters
+
+# Cloning project
+Ensure to add Thruster Scene (Assets/Scenes) to the Project scene if it does not appear.
